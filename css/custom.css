@@ -4,13 +4,16 @@ body {
 .wrapperBody .active {
   background-color: #fff5db;
 }
-.wrapperBody .active .mobileImage {
-  display: block !important;
-}
+
 .wrapperBody .active span {
   display: inline;
   text-align: start;
 }
 .Caecilia {
   font-family: 'Caecilia LT Pro', sans-serif;
+}
+@media (max-width: 768px) {
+  .wrapperBody .active .mobileImage {
+    display: block !important;
+  }
 }
