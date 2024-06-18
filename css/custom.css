@@ -1,8 +1,8 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 .wrapperBody .active {
-  background-color: #fff5db;
+  background-color: #f1f7e0;
 }
 
 .wrapperBody .active span {
