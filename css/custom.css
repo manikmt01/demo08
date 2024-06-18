@@ -1,0 +1,13 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.wrapperBody .active {
+  background-color: #fff5db;
+}
+.wrapperBody .active span {
+  display: inline;
+  text-align: start;
+}
+.Caecilia {
+  font-family: 'Caecilia LT Pro', sans-serif;
+}
