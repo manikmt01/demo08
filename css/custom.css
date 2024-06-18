@@ -4,6 +4,9 @@ body {
 .wrapperBody .active {
   background-color: #fff5db;
 }
+.wrapperBody .active .mobileImage {
+  display: block !important;
+}
 .wrapperBody .active span {
   display: inline;
   text-align: start;
