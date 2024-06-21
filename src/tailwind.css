@@ -22,8 +22,9 @@
 
 /* custom style */
 @layer utilities {
-  body {
-    font-family: 'Prompt', sans-serif;
+  body,
+  * {
+    font-family: 'Prompt', sans-serif !important;
   }
 
   .wrapperBody .active {
