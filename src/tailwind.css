@@ -73,6 +73,9 @@
   header .active {
     background-color: #f1f7e0;
   }
+  .wrapperBody .tabList1 .active {
+    background-color: #fff6d8;
+  }
   .active-sidebar,
   .active-sidebar:hover {
     color: #25221e !important;
@@ -81,7 +84,16 @@
   .accordion-content {
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
   }
-
+  @media (min-width: 768px) {
+    .header-hidden {
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+    .header-visible {
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
   .rotate-45 {
     transform: rotate(90deg);
   }
@@ -102,5 +114,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  .faq-section::before {
+    content: '';
+    display: block;
+    height: 72px; /* Same as header height */
+    margin-top: -72px; /* Negative of the header height */
+    visibility: hidden;
   }
 }
