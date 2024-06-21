@@ -73,9 +73,7 @@
   header .active {
     background-color: #f1f7e0;
   }
-  .wrapperBody .tabList1 .active {
-    background-color: #fff6d8;
-  }
+
   .active-sidebar,
   .active-sidebar:hover {
     color: #25221e !important;
