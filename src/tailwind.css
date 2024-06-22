@@ -26,50 +26,26 @@
   * {
     font-family: 'Prompt', sans-serif !important;
   }
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-
   .slider {
     overflow: hidden;
     position: relative;
     width: 100%;
+    margin: 0 auto;
   }
 
   .slider-track {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fill, minmax(16.66%, 1fr));
-    animation: slide 30s linear infinite;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
   }
 
   .slider-item {
+    flex: 0 0 auto;
     width: 100%;
   }
 
-  .slider::before,
-  .slider::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
+  .slider img {
     width: 100%;
-    background: linear-gradient(to right, white 0%, transparent 100%);
-    z-index: 2;
-  }
-
-  .slider::after {
-    right: 0;
-    background: linear-gradient(to left, white 0%, transparent 100%);
-  }
-
-  .slider::before {
-    left: 0;
+    display: block;
   }
   .wrapperBody .active {
     background-color: #f1f7e0;
