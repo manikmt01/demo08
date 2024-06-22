@@ -811,6 +811,16 @@
         <li><img src="img/5.Microsoft_x9xttd.png" alt="img" class="mx-auto "></li>
         <li><img src="img/6.Orange_ugh5r8.png" alt="img" class="mx-auto "></li>
       </ul>
+      <div class="slider">
+        <div class="slider-track">
+          <div class="slider-item"><img src="img/1.Airbus_dfepp7.png" alt="img" class="mx-auto"></div>
+          <div class="slider-item"><img src="img/2.BlaBlaCar_neq6xi.png" alt="img" class="mx-auto"></div>
+          <div class="slider-item"><img src="img/3.Doist_Logo_x4kdnl.png" alt="img" class="mx-auto"></div>
+          <div class="slider-item"><img src="img/4.LOreal_nodxic.png" alt="img" class="mx-auto"></div>
+          <div class="slider-item"><img src="img/5.Microsoft_x9xttd.png" alt="img" class="mx-auto"></div>
+          <div class="slider-item"><img src="img/6.Orange_ugh5r8.png" alt="img" class="mx-auto"></div>
+        </div>
+      </div>
     </div>
   </section>
   <hr class="mt-1 border-[#C3C3C3]" />
@@ -1111,6 +1121,28 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      const sliderTrack = document.querySelector('.slider-track');
+      const sliderItems = document.querySelectorAll('.slider-item');
+      const itemWidth = sliderItems[0].offsetWidth;
+      let currentIndex = 0;
+
+      function moveSlider() {
+        currentIndex++;
+        if (currentIndex >= sliderItems.length) {
+          currentIndex = 0;
+          sliderTrack.style.transition = 'none';
+          sliderTrack.style.transform = 'translateX(0)';
+        } else {
+          sliderTrack.style.transition = 'transform 0.5s linear';
+          sliderTrack.style.transform = `translateX(-${itemWidth * currentIndex}px)`;
+        }
+      }
+
+      setInterval(moveSlider, 3000); // Adjust the interval as needed
+    });
+  </script>
   <script>
     document.addEventListener("DOMContentLoaded", (event) => {
       const button = document.getElementById("navButton");
