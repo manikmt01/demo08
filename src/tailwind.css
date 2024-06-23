@@ -47,22 +47,26 @@
     width: 100%;
     display: block;
   }
-  .wrapperBody .active {
+  .wrapperBody0 .active {
     background-color: #f1f7e0;
   }
 
-  .wrapperBody .active span {
+  .wrapperBody0 .active span {
     display: inline;
     text-align: start;
   }
   .Caecilia {
     font-family: 'Caecilia LT Pro', sans-serif;
   }
+
   @media (max-width: 768px) {
+    #progressBarContainer {
+      top: 52px !important;
+    }
     .synchronisation button.active .hidden {
       display: block !important;
     }
-    .wrapperBody .active .mobileImage {
+    .wrapperBody0 .active .mobileImage {
       display: block !important;
     }
     #dropdownNavbar {
@@ -141,5 +145,20 @@
     height: 72px; /* Same as header height */
     margin-top: -72px; /* Negative of the header height */
     visibility: hidden;
+  }
+  #progressBarContainer {
+    position: fixed;
+    top: 72px; /* Adjust according to your header height */
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    z-index: 9999;
+  }
+
+  #progressBar {
+    height: 100%;
+    width: 0;
+    background: #4b7a45; /* Adjust the color to your preference */
   }
 }
