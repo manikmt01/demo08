@@ -47,10 +47,12 @@
     width: 100%;
     display: block;
   }
+  .DropdownBody .active,
   .wrapperBody .active {
     background-color: #f1f7e0;
   }
 
+  .DropdownBody .active span,
   .wrapperBody .active span {
     display: inline;
     text-align: start;
@@ -66,6 +68,7 @@
     .synchronisation button.active .hidden {
       display: block !important;
     }
+    .DropdownBody .active .mobileImage,
     .wrapperBody .active .mobileImage {
       display: block !important;
     }
