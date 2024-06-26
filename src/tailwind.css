@@ -110,8 +110,8 @@
 
   .active-sidebar,
   .active-sidebar:hover {
-    color: #25221e !important;
-    border-color: #4b7a45 !important;
+    color: #e0483a !important;
+    border-color: #e0483a !important;
   }
   .accordion-content {
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
@@ -162,7 +162,7 @@
   #progressBar {
     height: 100%;
     width: 0;
-    background: #4b7a45; /* Adjust the color to your preference */
+    background: #e0483a; /* Adjust the color to your preference */
   }
   /* price page  */
   #mobile-btn {
