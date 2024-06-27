@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formalist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+
+</head>
+
+<body>
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div id="sidebar" class="bg-gray-800 text-white w-64 p-4 overflow-y-auto ">
+      <div class="flex items-center justify-between">
+        <span class="text-lg font-semibold">Hani</span>
+        <button id="toggleButton" class="text-red-500">🔔</button>
+      </div>
+      <button class="bg-red-500 text-white w-full py-2 mt-4">Ajouter une tâche</button>
+      <ul class="mt-4">
+        <li class="py-2">Recherche</li>
+        <li class="py-2">Boîte de réception</li>
+        <li class="py-2 flex justify-between">
+          <span>Aujourd'hui</span>
+          <span class="bg-red-500 text-white rounded-full px-2">4</span>
+        </li>
+        <li class="py-2">Prochainement</li>
+        <li class="py-2">Filtres et étiquettes</li>
+        <li class="py-2">Achevé</li>
+      </ul>
+      <div class="mt-4">
+        <h2 class="text-gray-400">Favoris</h2>
+        <ul class="mt-2">
+          <li class="py-2">Cabinet <span class="text-gray-400">(17)</span></li>
+          <li class="py-2">Factures <span class="text-gray-400">(10)</span></li>
+          <li class="py-2">Formalités juridiques <span class="text-gray-400">(8)</span></li>
+          <li class="py-2">Rendez-vous <span class="text-gray-400">(3)</span></li>
+          <li class="py-2">Calendrier des audiences <span class="text-gray-400">(3)</span></li>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <h2 class="text-gray-400">Mes projets</h2>
+        <ul class="mt-2">
+          <li class="py-2">Travail 🍒 <span class="text-gray-400">(5)</span></li>
+          <li class="py-2">Perso 🏠 <span class="text-gray-400">(4)</span></li>
+          <li class="py-2">Cabinet <span class="text-gray-400">(17)</span></li>
+          <li class="py-2">Factures <span class="text-gray-400">(10)</span></li>
+          <li class="py-2">Formalités juridiques <span class="text-gray-400">(8)</span></li>
+          <li class="py-2">Rendez-vous <span class="text-gray-400">(3)</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-4">
+      <!-- Main content goes here -->
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('toggleButton').addEventListener('click', function () {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('hidden');
+    });
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
