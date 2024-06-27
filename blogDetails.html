@@ -55,9 +55,195 @@
             <div class="flex flex-wrap gap-x-2 lg:flex-row flex-col">
               <ul class="flex flex-col lg:flex-row">
                 <li>
-                  <a href="services.html"
-                    class="block text-[#25221e] text-base font-medium py-3 px-[18px] lg:mx-1 rounded-lg hover:bg-[#f5f5f5] transition-all"
-                    aria-current="page">Services</a>
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                    class="flex items-center justify-between w-full md:w-auto text-[#25221e] text-base font-medium py-3 px-[18px] mx-1 rounded-lg hover:bg-[#f5f5f5] transition-all">Services
+                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 4 4 4-4" />
+                    </svg></button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar"
+                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow md:w-96 w-full max-w-full !mx-1 lg:!mt-0 !mt-4">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 px-2"
+                      aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Création de Société</span>
+                            <span class="text-[#25221ea8] font-normal">Lancez votre entreprise sereinement.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Modification de Société</span>
+                            <span class="text-[#25221ea8] font-normal">Ajustez votre structure légalement.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Fermeture de Société</span>
+                            <span class="text-[#25221ea8] font-normal">Terminez vos activités proprement.</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Services Juridiques Personnalisés</span>
+                            <span class="text-[#25221ea8] font-normal">Solutions légales sur mesure.</span>
+                          </div>
+                        </a>
+                      </li>
+
+
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Gestion des Assemblées Générales</span>
+                            <span class="text-[#25221ea8] font-normal">Réunions statutaires efficaces.</span>
+                          </div>
+                        </a>
+                      </li>
+
+
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Optimisation Fiscale</span>
+                            <span class="text-[#25221ea8] font-normal">Maximisez vos avantages fiscaux.</span>
+                          </div>
+                        </a>
+                      </li>
+
+
+
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Résolution des Litiges</span>
+                            <span class="text-[#25221ea8] font-normal">Résolvez vos conflits rapidement.</span>
+                          </div>
+                        </a>
+                      </li>
+
+
+
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Audit Juridique
+                            </span>
+                            <span class="text-[#25221ea8] font-normal">Vérifiez votre conformité légale.</span>
+                          </div>
+                        </a>
+                      </li>
+
+
+
+
+                      <li>
+                        <a href="#" class="flex w-full gap-x-3 px-4 py-2 hover:bg-[#f5f5f5] rounded-lg ">
+                          <div class="mt-1">
+                            <svg width="18" height="18" viewBox="0 0 16 17" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" color="var(--display-onlight-tertiary)">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.25 4c0-.966.784-1.75 1.75-1.75h7c.966 0 1.75.784 1.75 1.75v2.001a2.5 2.5 0 1 1 0 4V12A1.75 1.75 0 0 1 10 13.75H3A1.75 1.75 0 0 1 1.25 12V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.996.444c-.71 0-1.285-.576-1.285-1.285V4ZM3 3.75a.25.25 0 0 0-.25.25v2.001a2.5 2.5 0 1 1 0 4V12c0 .138.112.25.25.25h7a.25.25 0 0 0 .25-.25V9.534c0-.71.575-1.284 1.284-1.284.437 0 .78.22.996.445a1 1 0 1 0 .001-1.389 1.395 1.395 0 0 1-.995.444c-.71 0-1.286-.576-1.286-1.285V4a.25.25 0 0 0-.25-.25H3Z"
+                                fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="">
+                            <span class="block text-[#25221e] font-medium mb-1">Récupération de Créances
+
+                            </span>
+                            <span class="text-[#25221ea8] font-normal">Recouvrez vos créances dès maintenant.</span>
+                          </div>
+                        </a>
+                      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+                  </div>
                 </li>
                 <li>
                   <a href="blog.html"
@@ -81,7 +267,7 @@
                 </li>
                 <li class="lg:w-auto w-full lg:text-start text-center">
                   <a href="#"
-                    class="block text-white text-base font-medium py-3 px-[18px] mx-1 rounded-lg hover:bg-[#cf331f] transition-all bg-[#e0483a]">S'inscrire</a>
+                    class="block text-white  text-base font-medium py-3 px-[18px] mx-1 rounded-lg hover:bg-[#cf331f] transition-all bg-[#e0483a]">S'inscrire</a>
                 </li>
               </ul>
             </div>
@@ -95,7 +281,7 @@
   <div id="progressBarContainer" class="w-full h-1 fixed top-0 left-0 bg-transparent z-50">
     <div id="progressBar" class="h-full bg-green-500" style="width: 0"></div>
   </div>
-  <div class="container max-w-[1276px] mx-auto px-6 pt-10 md:pt-16">
+  <div class="container max-w-[1136px] mx-auto px-6 pt-10 md:pt-16">
     <!-- Thumbnail title start here  -->
     <div class="text-center">
       <h1
