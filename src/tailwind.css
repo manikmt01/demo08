@@ -185,13 +185,13 @@
   }
   /* dashboard  */
   .sidebar-expanded {
-    width: 20%;
+    width: 22%;
   }
   .sidebar-collapsed {
     width: 0%;
   }
   .content-expanded {
-    width: 80%;
+    width: 78%;
   }
   .content-collapsed {
     width: 94%;
