@@ -219,4 +219,23 @@
       z-index: 50;
     }
   }
+  /* width */
+  #sidebarMenu::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  #sidebarMenu:hover::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  #sidebarMenu:hover::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  #sidebarMenu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
