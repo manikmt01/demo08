@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-white">
   <div class="flex flex-col lg:flex-row">
     <!-- mobileSidebar  -->
     <div id="mobileSidebar" class="hidden transition-all">
@@ -60,7 +60,7 @@
     <!-- desktop Sidebar -->
     <div id="sidebar" class="sidebar-expanded transition-all bg-[#fcfaf7] text-white flex-shrink-0">
       <div id="sidebarMenu"
-        class="h-screen px-3 py-4 overflow-y-auto flex flex-col justify-between lg:sticky fixed left-0 top-0 bg-[#fcfaf7] w-3/4 lg:w-auto ">
+        class="h-screen px-3 py-4 overflow-y-auto flex flex-col justify-between lg:sticky z-50 fixed left-0 top-0 bg-[#fcfaf7] w-3/4 lg:w-auto ">
         <!-- upper part  -->
         <div class="lg:w-auto sm:w-128 lg:mx-0 mx-auto w-full">
           <a href="/" class="flex items-center rtl:space-x-reverse gap-x-2 mb-4">
@@ -276,7 +276,29 @@
 
     <!-- Main Content -->
     <div id="mainContent" class="content-expanded transition-all mx-auto">
-      <div class="p-4">
+      <div class=" p-4 fixed top-0 left-0 right-0 w-full bg-white -z-0">
+        <form class="max-w-md ml-auto">
+          <label for="default-search"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="search" id="default-search"
+              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-[#e0483a] focus:border-[#e0483a]"
+              placeholder="Search Mockups, Logos..." required />
+            <button type="submit"
+              class="text-white absolute end-2.5 bottom-2.5 bg-[#e0483a] hover:bg-[#e0483a] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="p-20">
         <div class="pt-4">
           <!-- total widget start  -->
           <div class="mb-[24px] w-full">
@@ -333,7 +355,7 @@
                 <div class="flex justify-end">
                   <div class="dt-search">
                     <input type="search"
-                      class="border placeholder-gray-500 lg:ml-2 px-3 py-2 rounded-lg border-gray-200 focus:border-[#26874e]-500 focus:ring focus:ring-green-500 focus:ring-opacity-50"
+                      class="border placeholder-gray-500 lg:ml-2 px-3 py-2 rounded-lg border-gray-200 focus:border-[#e0483a]-500 focus:ring focus:ring-[#e0483a] focus:ring-opacity-50"
                       id="dt-search-0" placeholder="Entrer un mot clé" aria-controls="example" /><label
                       for="dt-search-0"></label>
                   </div>
@@ -402,13 +424,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=f7b3aba738e67db"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -426,13 +447,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=31ef4cfbc9a4f2c"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -450,13 +470,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=c3b635d1142214a"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -474,13 +493,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=a364014ab42a600"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -498,13 +516,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=6b735bdaa8cdfbb"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -522,13 +539,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=44a4fd13a45c5f5"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -546,13 +562,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=724946d755984a1"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -570,13 +585,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=a576aa329a4843a"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -594,13 +608,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=3c99f1df12f1ca2"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                       <tr class="even:bg-gray-50">
@@ -618,13 +631,12 @@
                           <span class=""> Aucun </span>
                         </td>
                         <td class="p-3">
-                          <span
-                            class="bg-yellow-100 text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
+                          <span class="bg-[#fff4d9] text-yellow-800 text-base font-normal me-2 px-2.5 py-0.5 rounded">En
                             attente de paiement</span>
                         </td>
                         <td class="flex space-x-2 p-3">
                           <a href="formalite/step1.php?id=cacff09deb44d9c"
-                            class="rounded-lg bg-[#26874e] px-4 py-2 font-medium text-white">Reprendre</a>
+                            class="rounded-lg bg-[#e0483a] px-4 py-2 font-medium text-white">Reprendre</a>
                         </td>
                       </tr>
                     </tbody>
