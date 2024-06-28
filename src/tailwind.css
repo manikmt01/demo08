@@ -61,6 +61,14 @@
     font-family: 'Caecilia LT Pro', sans-serif;
   }
 
+  @media (min-width: 768px) {
+    #mobileSidebar {
+      width: 0;
+    }
+    #mobileSidebar .hidden {
+      width: auto;
+    }
+  }
   @media (max-width: 768px) {
     #mobileSidebar {
       display: block !important;
