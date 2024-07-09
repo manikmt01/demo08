@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formalist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="bg-white">
+    <!--  only for desktop -->
+    <div
+      class="lg:fixed top-0 left-0 w-full bg-white z-50 lg:flex justify-between items-center hidden"
+    >
+      <div class="flex justify-between items-center w-[22%] px-10 py-3">
+        <a href="/" class="flex items-center rtl:space-x-reverse gap-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            viewBox="0 0 38.178 61.943"
+          >
+            <g
+              id="Groupe_54519"
+              data-name="Groupe 54519"
+              transform="translate(-611.123 -261.721)"
+            >
+              <path
+                id="Tracé_1"
+                data-name="Tracé 1"
+                d="M616.353,261.726l32.444,4.139a.578.578,0,0,1,.5.573v11.015a.577.577,0,0,1-.3.508l-5.392,2.921a.578.578,0,0,1-.853-.508v-9.716a.577.577,0,0,0-.494-.571l-30.641-4.469a.578.578,0,0,1-.214-1.067l4.578-2.747A.577.577,0,0,1,616.353,261.726Z"
+              ></path>
+              <path
+                id="Tracé_2"
+                data-name="Tracé 2"
+                d="M722.3,443.36a.577.577,0,0,1-.494-.571V432.332a.577.577,0,0,1,.636-.574l5.761.593a.577.577,0,0,1,.518.574v6.01a.577.577,0,0,0,.5.573l17.148,2.188a.577.577,0,0,1,.5.573v11.015a.577.577,0,0,1-.3.508l-5.393,2.921a.577.577,0,0,1-.852-.508v-9.717a.577.577,0,0,0-.494-.571L728.716,444.3Z"
+                transform="translate(-99.657 -153.102)"
+              ></path>
+              <path
+                id="Tracé_3"
+                data-name="Tracé 3"
+                d="M722.016,673.967v10.216a.578.578,0,0,0,.853.508l5.392-2.921a.578.578,0,0,0,.3-.508V663.833a.578.578,0,0,0-.525-.575l-5.527-.5a.578.578,0,0,0-.63.582Z"
+                transform="translate(-99.729 -361.097)"
+              ></path>
+            </g>
+          </svg>
+          <span class="text-xl font-semibold text-[#25221e]">Formalist</span>
+        </a>
+        <button
+          id="toggleButton"
+          class="hover:bg-[#f2f0ed] rounded text-[#212121]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="lg:block hidden"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M19 4.001H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-12a2 2 0 0 0-2-2Zm-15 2a1 1 0 0 1 1-1h4v14H5a1 1 0 0 1-1-1v-12Zm6 13h9a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1h-9v14Z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="lg:hidden block"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="flex justify-between items-center w-[78%] px-8 py-3">
+        <h2 class="lg:text-4xl text-xl font-semibold text-gray-900">Etape 1</h2>
+        <form class="max-w-md w-96 ml-auto">
+          <label
+            for="default-search"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only"
+            >Search</label
+          >
+          <div class="relative lg:block hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="search"
+              id="default-search"
+              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-[#ededed] rounded-lg bg-gray-50 focus:ring-[#ededed] focus:border-[#ededed]"
+              placeholder="Rechercher une formalité"
+              required
+            />
+            <button
+              type="submit"
+              class="text-white absolute end-2.5 bottom-2.5 bg-[#e0483a] hover:bg-[#cf331f] focus:ring-4 focus:outline-none focus:ring-[#cf331f] font-medium rounded-lg text-sm px-4 py-2"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row">
+      <!-- mobileSidebar  -->
+      <div id="mobileSidebar" class="hidden transition-all">
+        <div class="p-6 lg:p-4 flex justify-between items-center lg:static">
+          <div class="lg:hidden">
+            <a href="/" class="flex items-center rtl:space-x-reverse gap-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                viewBox="0 0 38.178 61.943"
+              >
+                <g
+                  id="Groupe_54519"
+                  data-name="Groupe 54519"
+                  transform="translate(-611.123 -261.721)"
+                >
+                  <path
+                    id="Tracé_1"
+                    data-name="Tracé 1"
+                    d="M616.353,261.726l32.444,4.139a.578.578,0,0,1,.5.573v11.015a.577.577,0,0,1-.3.508l-5.392,2.921a.578.578,0,0,1-.853-.508v-9.716a.577.577,0,0,0-.494-.571l-30.641-4.469a.578.578,0,0,1-.214-1.067l4.578-2.747A.577.577,0,0,1,616.353,261.726Z"
+                  ></path>
+                  <path
+                    id="Tracé_2"
+                    data-name="Tracé 2"
+                    d="M722.3,443.36a.577.577,0,0,1-.494-.571V432.332a.577.577,0,0,1,.636-.574l5.761.593a.577.577,0,0,1,.518.574v6.01a.577.577,0,0,0,.5.573l17.148,2.188a.577.577,0,0,1,.5.573v11.015a.577.577,0,0,1-.3.508l-5.393,2.921a.577.577,0,0,1-.852-.508v-9.717a.577.577,0,0,0-.494-.571L728.716,444.3Z"
+                    transform="translate(-99.657 -153.102)"
+                  ></path>
+                  <path
+                    id="Tracé_3"
+                    data-name="Tracé 3"
+                    d="M722.016,673.967v10.216a.578.578,0,0,0,.853.508l5.392-2.921a.578.578,0,0,0,.3-.508V663.833a.578.578,0,0,0-.525-.575l-5.527-.5a.578.578,0,0,0-.63.582Z"
+                    transform="translate(-99.729 -361.097)"
+                  ></path>
+                </g>
+              </svg>
+              <span class="text-xl font-semibold text-[#25221e]"
+                >Formalist</span
+              >
+            </a>
+          </div>
+          <div>
+            <button
+              id="toggleButton2"
+              class="hover:bg-[#f2f0ed] rounded p-1 lg:fixed lg:top-4 lg:left-3 z-50 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="lg:block hidden"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M19 4.001H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-12a2 2 0 0 0-2-2Zm-15 2a1 1 0 0 1 1-1h4v14H5a1 1 0 0 1-1-1v-12Zm6 13h9a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1h-9v14Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="lg:hidden block"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- desktop Sidebar -->
+      <div
+        id="sidebar"
+        class="sidebar-expanded transition-all bg-[#fcfaf7] text-white flex-shrink-0"
+      >
+        <div
+          id="sidebarMenu"
+          class="h-screen px-10 pb-4 lg:pt-24 pt-10 overflow-y-auto flex flex-col justify-between lg:sticky z-10 fixed left-0 top-0 bg-[#fcfaf7] w-3/4 lg:w-auto"
+        >
+          <button
+            id="toggleButton3"
+            class="hover:bg-[#f2f0ed] fixed right-3 top-3 text-gray-500 hover:text-red-500 rounded p-1 lg:hidden lg:top-4 lg:left-3 z-50 flex"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </button>
+          <!-- upper part  -->
+          <div class="lg:w-auto sm:w-128 lg:mx-0 mx-auto w-full">
+            <div class="flex items-center justify-between">
+              <!-- name toggle start  -->
+              <button
+                id="dropdownDefaultButton"
+                data-dropdown-toggle="dropdown"
+                class="flex items-center gap-2 hover:bg-[#f2f0ed] rounded p-1"
+              >
+                <span
+                  ><img
+                    src="img/avatar.png"
+                    class="w-6 h-6 rounded-[50%] object-cover"
+                    alt=""
+                /></span>
+                <span class="text-[#212121] text-sm font-semibold">John</span>
+                <span><img src="img/down-arrow.png" class="w-4" alt="" /></span>
+              </button>
+              <!-- name toggle start  -->
+              <!-- notification  -->
+              <div class="flex items-center gap-3">
+                <button
+                  class="relative hover:bg-[#f2f0ed] rounded p-1 text-[#212121]"
+                >
+                  <img src="img/bell.png" class="w-5" alt="" />
+                  <span
+                    class="text-xs text-red-400 font-semibold absolute top-0 right-0"
+                    >8</span
+                  >
+                </button>
+              </div>
+            </div>
+            <!-- sidebar nametoggle row ends  -->
+            <div>
+              <h3 class="text-[#666] font-semibold text-sm mt-4 mb-2 p-1">
+                Compte
+              </h3>
+              <ul class="space-y-3 font-normal text-sm">
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] bg-[#ffefe6] active:bg-[#ffefe6] rounded p-3"
+                  >
+                    <span
+                      ><img src="img/pie-chart.png" class="w-5" alt=""
+                    /></span>
+                    <span class="ms-3">Dashboard</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3 justify-between"
+                  >
+                    <span class="flex items-center"
+                      ><span
+                        ><img src="img/clipboard.png" class="w-5" alt=""
+                      /></span>
+                      <span class="ms-3">Formalités</span></span
+                    >
+                    <span class="font-normal">4</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3 justify-between"
+                  >
+                    <span class="flex items-center"
+                      ><span
+                        ><img src="img/chat.png" class="w-5" alt=""
+                      /></span>
+                      <span class="ms-3">Messagerie</span></span
+                    >
+                    <span class="font-normal">2</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <!-- services start here  -->
+            <div class="my-8">
+              <h3 class="text-[#666] font-semibold text-sm mt-4 mb-2 p-1">
+                Services
+              </h3>
+              <ul class="space-y-3 font-normal text-sm">
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+                  >
+                    <span
+                      ><img src="img/inspiration.png" class="w-5" alt=""
+                    /></span>
+                    <span class="ms-3">Création de société</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+                  >
+                    <span
+                      ><img src="img/modification.png" class="w-5" alt=""
+                    /></span>
+                    <span class="ms-3">Modification de société</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+                  >
+                    <span
+                      ><img src="img/closure.png" class="w-6" alt=""
+                    /></span>
+                    <span class="ms-3">Fermeture de société</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+                  >
+                    <span
+                      ><img src="img/online-meeting.png" class="w-5" alt=""
+                    /></span>
+                    <span class="ms-3">Assemblées générales</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+                  >
+                    <span
+                      ><img src="img/service.png" class="w-5" alt=""
+                    /></span>
+                    <span class="ms-3">Services juridiques</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- bottom part  -->
+          <div class="lg:w-auto sm:w-128 lg:mx-0 mx-auto w-full mt-5">
+            <button
+              class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3 font-bold text-sm"
+            >
+              <span><img src="img/arrow.png" class="w-5" alt="" /></span>
+              <span class="ms-3">Déconnexion</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div id="mainContent" class="content-expanded transition-all mx-auto">
+        <div class="pt-20">
+          <div
+            class="my-[24px] w-full lg:w-3/4 mx-auto px-8 py-3 rounded-lg bg-white"
+          >
+            <div class="shadow-xl p-4 lg:p-8 rounded-lg">
+              <!-- step1 start here  -->
+              <div id="step1" class="block">
+                <div class="flex w-full -mr-4">
+                  <div class="w-full mx-4">
+                    <h5
+                      class="text-center text-2xl md:text-4xl font-semibold leading-none tracking-tight text-bgray-900"
+                    >
+                      La société
+                    </h5>
+                    <div class="w-full bg-gray-200 rounded-full mt-6">
+                      <div
+                        class="bg-[#16a34a] text-xs font-medium text-green-100 text-center p-2 leading-none rounded-full"
+                        style="width: 20%"
+                      >
+                        20%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                    <div>
+                      <label
+                        for="type_entreprise"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Type de l'entreprise</label
+                      >
+                      <input
+                        type="text"
+                        name="type_entreprise"
+                        id="type_entreprise"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                        value="SASU"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                    <div>
+                      <label
+                        for="nom_entreprise"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Nom de l'entreprise</label
+                      >
+                      <input
+                        value="STYLO"
+                        name="nom_entreprise"
+                        id="nom_entreprise"
+                        type="text"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full -mr-4 mt-6">
+                  <div class="w-full mx-4 relative">
+                    <label
+                      for="input_entreprise"
+                      class="text-basse mb-2 block font-medium text-[#718096]"
+                      >Adresse de l'entreprise</label
+                    >
+                    <input
+                      value="276 Rue du Faubourg Saint-Antoine 75012 Paris"
+                      id="input_entreprise"
+                      name="adresse_entreprise"
+                      type="text"
+                      class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                      required=""
+                    />
+                    <div
+                      id="liste_adresses_entreprise"
+                      class="absolute z-10 w-full bg-white border border-gray-200 mt-1 rounded shadow-lg hidden"
+                    ></div>
+                  </div>
+                </div>
+                <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                    <div>
+                      <label
+                        for="capital"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Capital</label
+                      >
+                      <input
+                        value="1000"
+                        min="1"
+                        name="capital"
+                        id="capital"
+                        type="number"
+                        step="any"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                    <div>
+                      <label
+                        for="select_banque"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Choix de la banque</label
+                      >
+                      <select
+                        id="select_banque"
+                        name="banque"
+                        type="text"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                        required=""
+                      >
+                        <option value="QONTO" selected="">QONTO</option>
+                        <option value="SHINE">SHINE</option>
+                        <option value="AUTRES">AUTRE</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="adresse_banque"
+                  class="hidden w-full -mr-4 mt-0 md:mt-6"
+                >
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/3 mx-4">
+                    <div>
+                      <label
+                        for="nom_banque"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Nom de la banque</label
+                      >
+                      <input
+                        value=""
+                        name="nom_banque"
+                        id="nom_banque"
+                        type="text"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-2/3 mx-4 relative"
+                  >
+                    <label
+                      for="input_banque"
+                      class="text-basse mb-2 block font-medium text-[#718096]"
+                      >Adresse de la banque</label
+                    >
+                    <input
+                      value=""
+                      id="input_banque"
+                      name="adresse_banque"
+                      type="text"
+                      class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                    />
+                    <div
+                      id="liste_adresses_banque"
+                      class="absolute z-10 w-full bg-white border border-gray-200 mt-1 rounded shadow-lg hidden"
+                    ></div>
+                  </div>
+                </div>
+                <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                    <div>
+                      <label
+                        for="date_debut"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Date de début de l'activité</label
+                      >
+                      <input
+                        value="03-07-2024"
+                        name="date_debut"
+                        id="date_debut"
+                        type="text"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0 hasDatepicker"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                    <div>
+                      <label
+                        for="date_cloture"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Date de clôture de l'exercice</label
+                      >
+                      <input
+                        value="31-12-2024"
+                        name="date_cloture"
+                        id="date_cloture"
+                        type="text"
+                        class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0 hasDatepicker"
+                        required=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full -mr-4 mt-6">
+                  <div class="w-full mx-4">
+                    <label
+                      for="activite_entreprise"
+                      class="text-basse mb-2 block font-medium text-[#718096]"
+                      >Activité de l'entreprise</label
+                    >
+                    <textarea
+                      name="activite_entreprise"
+                      id="activite_entreprise"
+                      class="w-full resize-none rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                      required=""
+                    >
+Studio musical
+                    </textarea>
+                  </div>
+                </div>
+                <div class="flex justify-end mx-4 mt-6">
+                  <button
+                    id="suivant"
+                    class="rounded-lg bg-[#26874e] px-4 py-2 font-semibold text-white transition-all hover:bg-[#16a34a]"
+                  >
+                    Suivant
+                  </button>
+                </div>
+              </div>
+              <!-- step1 end here  -->
+              <!-- step2 start here  -->
+              <div id="step2" class="hidden">
+                <div class="flex w-full -mr-4">
+                  <div class="w-full mx-4">
+                    <h5
+                      class="text-center text-2xl md:text-4xl font-semibold leading-none tracking-tight text-bgray-900"
+                    >
+                      Le(s) actionnaire(s)
+                    </h5>
+                    <div class="w-full bg-gray-200 rounded-full mt-6">
+                      <div
+                        class="bg-[#16a34a] text-xs font-medium text-green-100 text-center p-2 leading-none rounded-full"
+                        style="width: 40%"
+                      >
+                        40%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gray-100 p-4 block md:flex justify-between mt-6 mx-4 rounded-lg"
+                >
+                  <h5
+                    class="self-center text-center text-xl font-semibold leading-none tracking-tight text-bgray-900"
+                  >
+                    Actionnaire #1
+                  </h5>
+                  <div class="mt-2 md:mt-0 flex space-x-4">
+                    <input type="hidden" />
+                    <input type="hidden" name="id" value="347" />
+                    <button
+                      name="btn_delete"
+                      class="w-full rounded-lg bg-red-300 px-4 py-2 font-semibold text-white transition-all hover:bg-red-400"
+                    >
+                      Supprimer
+                    </button>
+
+                    <button
+                      id="1"
+                      name="btn_hide"
+                      type="button"
+                      class="flex justify-center w-full rounded-lg bg-blue-300 px-4 py-2 font-semibold text-white transition-all hover:bg-blue-400"
+                    >
+                      <svg
+                        class="w-6 h-6 text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-width="2"
+                          d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"
+                        ></path>
+                        <path
+                          stroke="currentColor"
+                          stroke-width="2"
+                          d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div id="associate_1" class="form_associate">
+                  <div class="w-full -mr-4 mt-6">
+                    <span
+                      class="text-basse mb-2 block font-medium text-[#718096] mx-4"
+                      >Type d'actionnaire
+                    </span>
+                    <div class="flex w-full">
+                      <div
+                        class="flex items-center ps-4 border border-gray-200 rounded w-full mx-4"
+                      >
+                        <input
+                          id="select_type_individual_1"
+                          name="select_type_company_1"
+                          type="radio"
+                          value="individual"
+                          class="type w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 focus:ring-2"
+                          required=""
+                        />
+                        <label
+                          for="select_type_individual_1"
+                          class="w-full py-4 ms-2 text-sm font-medium text-gray-900"
+                          >Personne</label
+                        >
+                      </div>
+                      <div
+                        class="flex items-center ps-4 border border-gray-200 rounded w-full mx-4"
+                      >
+                        <input
+                          checked=""
+                          id="select_type_company_1"
+                          name="select_type_company_1"
+                          type="radio"
+                          value="company"
+                          class="type w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 focus:ring-2"
+                          required=""
+                        />
+                        <label
+                          for="select_type_company_1"
+                          class="w-full py-4 ms-2 text-sm font-medium text-gray-900"
+                          >Société</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div id="societe_associate_1" class="societe_associate">
+                    <div class="flex w-full -mr-4 mt-6">
+                      <div class="w-full mx-4 relative">
+                        <label
+                          for="1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Recherche (Nom, SIREN ou SIRET)</label
+                        >
+                        <div class="relative">
+                          <div
+                            class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                          >
+                            <svg
+                              class="w-4 h-4 text-gray-500"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <input
+                            id="name_company_1"
+                            class="name_company block w-full p-4 ps-10 text-sm rounded-lg border-0 bg-[#fafafa] focus:border focus:border-green focus:ring-0"
+                            placeholder="Recherche (Nom, SIREN ou SIRET)"
+                          />
+                          <button
+                            id="1"
+                            type="button"
+                            class="search_company text-white absolute end-2.5 bottom-2.5 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2"
+                          >
+                            Chercher
+                          </button>
+                        </div>
+                        <div
+                          id="liste_entreprise_1"
+                          class="liste_entreprise absolute z-10 w-full bg-white border border-gray-200 mt-1 rounded shadow-lg hidden"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="type_entreprise_associee_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Type de l'entreprise</label
+                          >
+                          <input
+                            value="SAS"
+                            id="type_entreprise_associee_1"
+                            name="type_entreprise_associee[]"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="siren_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >SIREN</label
+                          >
+                          <input
+                            value="890003106"
+                            id="siren_1"
+                            name="siren[]"
+                            type="number"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="nom_entreprise_associee_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Nom de l'entreprise</label
+                          >
+                          <input
+                            value="BMF HOLDING"
+                            id="nom_entreprise_associee_1"
+                            name="nom_entreprise_associee[]"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="ville_immatriculation_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Ville d'immatrictulation</label
+                          >
+                          <input
+                            value="PARIS"
+                            id="ville_immatriculation_1"
+                            name="ville_immatriculation[]"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex w-full -mr-4 mt-6">
+                      <div class="mx-4 relative w-full">
+                        <label
+                          for="input_address_entreprise_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Adresse de l'entreprise</label
+                        >
+                        <input
+                          value="10 RUE DE PENTHIEVRE 75008 PARIS"
+                          name="address_entreprise_associee[]"
+                          id="input_address_entreprise_1"
+                          type="text"
+                          class="adresse_entreprise w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                        />
+                        <div
+                          id="liste_adresses_entreprise_1"
+                          class="liste_adresses_entreprise absolute z-10 w-full bg-white border border-gray-200 mt-1 rounded shadow-lg hidden"
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="montant_capital_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Montant du capital</label
+                          >
+                          <input
+                            value="100"
+                            id="montant_capital_1"
+                            name="montant_capital[]"
+                            type="number"
+                            step="any"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="numero_rcs_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Numéro RCS</label
+                          >
+                          <input
+                            value="Paris B 890003106"
+                            id="numero_rcs_1"
+                            name="numero_rcs[]"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                            required=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full -mr-4 mt-6">
+                      <h5
+                        class="text-xl mb-2 block font-medium text-[#718096] mx-4"
+                      >
+                        Dirigeant d'entreprise
+                      </h5>
+                      <hr class="mx-4" />
+                    </div>
+                  </div>
+                  <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/5 mx-4">
+                      <div>
+                        <label
+                          for="civilite_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Civilité</label
+                        >
+                        <select
+                          name="civilite[]"
+                          id="civilite_1"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        >
+                          <option selected="" value="Monsieur">Monsieur</option>
+                          <option value="Madame">Madame</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-2/5 mx-4">
+                      <div>
+                        <label
+                          for="nom_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Nom</label
+                        >
+                        <input
+                          value="KOOMSON"
+                          name="nom[]"
+                          id="nom_1"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-2/5 mx-4">
+                      <div>
+                        <label
+                          for="prenom_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Prénom</label
+                        >
+                        <input
+                          value="Nigel"
+                          name="prenom[]"
+                          id="prenom_1"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="adresse_1" class="w-full -mr-4 mt-6">
+                    <div class="mx-4 relative">
+                      <label
+                        for="input_adresse_1"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Adresse</label
+                      >
+                      <input
+                        value="34 Rue Laugier 75017 Paris"
+                        name="adresse[]"
+                        id="input_adresse_1"
+                        type="text"
+                        class="adresse w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                        required=""
+                      />
+                      <div
+                        id="liste_adresses_1"
+                        class="liste_adresses absolute z-10 w-full bg-white border border-gray-200 mt-1 rounded shadow-lg hidden"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="cp_naissance_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Code postal de naissance</label
+                        >
+                        <input
+                          value="93700"
+                          max="99999"
+                          oninput="this.value=this.value.slice(0,this.maxLength)"
+                          maxlength="5"
+                          id="cp_naissance_1"
+                          name="cp_naissance[]"
+                          type="number"
+                          class="cp w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="ville_naissance_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Ville de naissance</label
+                        >
+                        <input
+                          value="Drancy"
+                          id="ville_naissance_1"
+                          name="ville_naissance[]"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="date_naissance_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Date de naissance</label
+                        >
+                        <input
+                          value="18-06-1985"
+                          id="date_naissance_1"
+                          name="date_naissance[]"
+                          type="text"
+                          class="date w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0 hasDatepicker"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="pays_naissance_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Pays de naissance</label
+                        >
+                        <input
+                          value="France"
+                          id="pays_naissance_1"
+                          name="pays_naissance[]"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="nationalite_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Nationalité</label
+                        >
+                        <input
+                          value="Française"
+                          id="nationalite_1"
+                          name="nationalite[]"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="situation_maritale_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Situation maritale</label
+                        >
+                        <select
+                          id="situation_maritale_1"
+                          name="situation_maritale[]"
+                          type="text"
+                          class="mariage w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        >
+                          <option selected="" value="Célibataire">
+                            Célibataire
+                          </option>
+                          <option value="Marié(e)">Marié(e)</option>
+                          <option value="Divorcé(e)">Divorcé(e)</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="prenom_nom_pere_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Nom et prénom de son père</label
+                        >
+                        <input
+                          value="PAP"
+                          id="prenom_nom_pere_1"
+                          name="prenom_nom_pere[]"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4">
+                      <div>
+                        <label
+                          for="prenom_nom_mere_1"
+                          class="text-basse mb-2 block font-medium text-[#718096]"
+                          >Nom et prénom de sa mère</label
+                        >
+                        <input
+                          value="MAM"
+                          id="prenom_nom_mere_1"
+                          name="prenom_nom_mere[]"
+                          type="text"
+                          class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="mariage_1" class="hidden">
+                    <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/5 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="civilite_marie_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Civilité Époux(se)</label
+                          >
+                          <select
+                            name="civilite_marie[]"
+                            id="civilite_marie_1"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          >
+                            <option selected="" value="Monsieur">
+                              Monsieur
+                            </option>
+                            <option value="Madame">Madame</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-2/5 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="nom_marie_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Nom Époux(se)</label
+                          >
+                          <input
+                            value=""
+                            name="nom_marie[]"
+                            id="nom_marie_1"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-2/5 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="prenom_marie_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Prénom Époux(se)</label
+                          >
+                          <input
+                            value=""
+                            name="prenom_marie[]"
+                            id="prenom_marie_1"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="nom_naissance_marie_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Nom de naissance Époux(se)</label
+                          >
+                          <input
+                            value=""
+                            name="nom_naissance_marie[]"
+                            id="nom_naissance_marie_1"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="date_mariage_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Date de mariage</label
+                          >
+                          <input
+                            value=""
+                            name="date_mariage[]"
+                            id="date_mariage_1"
+                            type="text"
+                            class="date w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0 hasDatepicker"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="block md:flex w-full -mr-4 mt-0 md:mt-6">
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="ville_mariage_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Ville mariage</label
+                          >
+                          <input
+                            value=""
+                            name="ville_mariage[]"
+                            id="ville_mariage_1"
+                            type="text"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="w-full mt-6 md:mt-0 pr-8 md:pr-0 md:w-1/2 mx-4"
+                      >
+                        <div>
+                          <label
+                            for="contrat_marie_1"
+                            class="text-basse mb-2 block font-medium text-[#718096]"
+                            >Contrat de mariage</label
+                          >
+                          <select
+                            name="contrat_marie[]"
+                            id="contrat_marie_1"
+                            class="w-full rounded-lg border-0 bg-[#fafafa] p-4 focus:border focus:border-green focus:ring-0"
+                          >
+                            <option selected="" value="Non">Non</option>
+                            <option value="Oui">Oui</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex mx-4 mt-6">
+                  <button
+                    id="add_associate"
+                    name="btn_add"
+                    type="submit"
+                    class="w-full rounded-lg bg-blue-300 px-4 py-2 font-semibold text-white transition-all hover:bg-blue-400"
+                  >
+                    Ajouter un nouvel actionnaire
+                  </button>
+                </div>
+
+                <div
+                  class="block md:flex md:flex-row-reverse md:justify-between mx-4 mt-6"
+                >
+                  <button
+                    id="suivant2"
+                    name="btn_step"
+                    type="submit"
+                    class="w-full md:w-fit rounded-lg bg-[#26874e] px-4 py-2 font-semibold text-white transition-all hover:bg-[#16a34a]"
+                  >
+                    Suivant
+                  </button>
+
+                  <button
+                    id="pre2"
+                    name="pre2"
+                    type="submit"
+                    class="text-center w-full md:w-fit mt-2 md:mt-0 rounded-lg bg-red-300 px-4 py-2 font-semibold text-white transition-all hover:bg-red-400"
+                  >
+                    Précédent
+                  </button>
+                </div>
+              </div>
+              <!-- step2 end here  -->
+              <!-- step3 start here  -->
+              <div id="step3" class="hidden">
+                <div class="flex w-full -mr-4">
+                  <div class="w-full mx-4">
+                    <h5
+                      class="text-center text-2xl md:text-4xl font-semibold leading-none tracking-tight text-bgray-900"
+                    >
+                      Apports et Direction
+                    </h5>
+                    <div class="w-full bg-gray-200 rounded-full mt-6">
+                      <div
+                        class="bg-[#16a34a] text-xs font-medium text-green-100 text-center p-2 leading-none rounded-full"
+                        style="width: 60%"
+                      >
+                        60%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full md:w-1/2 pr-8 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="capital"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Capital (€)</label
+                      >
+                      <input
+                        type="number"
+                        id="capital"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="1000"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 pr-8 mt-6 md:mt-0 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="valeur_part"
+                        class="text-basse mb-2 block font-medium text-[#718096]"
+                        >Valeur de l'action (€)</label
+                      >
+                      <input
+                        type="number"
+                        step="any"
+                        name="valeur_part"
+                        id="valeur_part"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="5"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full pr-8 md:pr-0 mx-4">
+                    <label
+                      for="capital"
+                      class="text-basse block font-medium text-[#718096]"
+                      >Parts des actionnaires</label
+                    >
+                  </div>
+                </div>
+
+                <input type="hidden" value="348" required="" />
+                <input
+                  type="hidden"
+                  id="nb_part_1"
+                  value="200.00"
+                  required=""
+                />
+                <input
+                  type="hidden"
+                  id="capital_deposit_1"
+                  value="1000.00"
+                  required=""
+                />
+
+                <div
+                  class="bg-gray-100 pb-8 md:pb-4 p-4 mx-4 my-2 rounded-lg block md:flex justify-between"
+                >
+                  <div class="w-full">
+                    <h5
+                      class="self-center text-center md:text-start text-xl font-semibold leading-none tracking-tight text-bgray-900"
+                    >
+                      SAS BMF HOLDING
+                    </h5>
+                    <div class="flex justify-center md:justify-start mt-2">
+                      <span
+                        id="part_1"
+                        class="bg-green-100 text-green-800 text-base font-medium me-2 px-2.5 py-0.5 rounded"
+                        >200.00 actions</span
+                      >
+                      <span
+                        class="bg-red-300 text-red-800 text-base font-medium me-2 px-2.5 py-0.5 rounded"
+                        >1000€ à déposer</span
+                      >
+                    </div>
+                  </div>
+                  <div class="mt-4 md:mt-0 flex self-center w-full relative">
+                    <input
+                      id="range_1"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="100"
+                      class="range w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                      disabled=""
+                    />
+
+                    <span
+                      class="text-sm text-gray-500 absolute start-0 -bottom-6"
+                      >0%</span
+                    >
+                    <span class="text-sm text-gray-500 absolute end-0 -bottom-6"
+                      >100%</span
+                    >
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4 mt-2">
+                  <div class="w-full pr-8 md:pr-0 mx-4">
+                    <span
+                      id="nombre_part"
+                      class="bg-green-100 text-green-800 text-base font-medium me-2 px-2.5 py-0.5 rounded"
+                      >Toutes les actions sont attribuées</span
+                    >
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4">
+                  <div class="w-full md:w-1/2 pr-8 mt-6">
+                    <span
+                      class="text-basse mb-2 block font-medium text-[#718096] mx-4"
+                      >Président (Obligatoire)</span
+                    >
+                    <div class="w-full space-y-2">
+                      <div
+                        class="flex items-center ps-4 border border-gray-200 rounded w-full mx-4"
+                      >
+                        <input
+                          id="select_president_348"
+                          name="select_president"
+                          type="radio"
+                          value="348"
+                          class="type w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 focus:ring-2"
+                          required=""
+                        />
+                        <label
+                          for="select_president_348"
+                          class="w-full py-4 ms-2 text-sm font-medium text-gray-900"
+                        >
+                          SAS BMF HOLDING
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full md:w-1/2 pr-8 mt-6">
+                    <span
+                      class="text-basse mb-2 block font-medium text-[#718096] mx-4"
+                      >Directeur Général (Optionnel)</span
+                    >
+                    <div class="w-full space-y-2">
+                      <div
+                        class="flex items-center ps-4 border border-gray-200 rounded w-full mx-4"
+                      >
+                        <input
+                          id="select_director_348"
+                          name="select_director"
+                          type="radio"
+                          value="348"
+                          class="type w-4 h-4 text-green-600 bg-gray-100 border-gray-300 focus:ring-green-500 focus:ring-2"
+                        />
+                        <label
+                          for="select_director_348"
+                          class="w-full py-4 ms-2 text-sm font-medium text-gray-900"
+                        >
+                          SAS BMF HOLDING
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="block md:flex md:flex-row-reverse md:justify-between mx-4 mt-6"
+                >
+                  <button
+                    id="suivant3"
+                    name="btn_step"
+                    class="w-full md:w-fit rounded-lg bg-[#26874e] px-4 py-2 font-semibold text-white transition-all hover:bg-[#16a34a]"
+                  >
+                    Suivant
+                  </button>
+
+                  <button
+                    id="pre3"
+                    name="pre3"
+                    class="text-center w-full md:w-fit mt-2 md:mt-0 rounded-lg bg-red-300 px-4 py-2 font-semibold text-white transition-all hover:bg-red-400"
+                  >
+                    Précédent
+                  </button>
+                </div>
+              </div>
+              <!-- step3 end here  -->
+              <!-- step4 start here  -->
+              <div id="step4" class="hidden">
+                <div class="flex w-full -mr-4">
+                  <div class="w-full mx-4">
+                    <h5
+                      class="text-center text-2xl md:text-4xl font-semibold leading-none tracking-tight text-bgray-900"
+                    >
+                      Documents
+                    </h5>
+                    <div class="w-full bg-gray-200 rounded-full mt-6">
+                      <div
+                        class="bg-[#16a34a] text-xs font-medium text-green-100 text-center p-2 leading-none rounded-full"
+                        style="width: 80%"
+                      >
+                        80%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full md:w-1/2 pr-8 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900"
+                        for="file_input"
+                        >Document d'identité (2 fichiers max)</label
+                      >
+                      <input
+                        type="file"
+                        name="identity[]"
+                        accept="image/*"
+                        class="text-sm text-grey-500 file:mr-5 file:py-2 file:px-6 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-green-50 file:text-green-700 hover:file:cursor-pointer hover:file:bg-gray-50"
+                        id="file_input"
+                        required=""
+                        multiple=""
+                      />
+                      <p class="mt-1 text-sm text-gray-500">PNG, JPG, JPEG.</p>
+                      <div
+                        id="identity_preview"
+                        class="block space-y-2 mt-2"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 pr-8 mt-6 md:mt-0 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        class="block mb-2 text-sm font-medium text-gray-900"
+                        for="file_input2"
+                        >Justificatif de domicile (1 fichier max)</label
+                      >
+                      <input
+                        type="file"
+                        name="jdd"
+                        accept="image/*"
+                        class="text-sm text-grey-500 file:mr-5 file:py-2 file:px-6 file:rounded-full file:border-0 file:text-sm file:font-medium file:bg-green-50 file:text-green-700 hover:file:cursor-pointer hover:file:bg-gray-50"
+                        id="file_input2"
+                        required=""
+                      />
+                      <p class="mt-1 text-sm text-gray-500">PNG, JPG, JPEG.</p>
+                      <div id="jdd_preview" class="flex space-x-2 mt-2"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="block md:flex md:flex-row-reverse md:justify-between mx-4 mt-6"
+                >
+                  <button
+                    id="suivant4"
+                    name="btn_step"
+                    class="w-full md:w-fit rounded-lg bg-[#26874e] px-4 py-2 font-semibold text-white transition-all hover:bg-[#16a34a]"
+                  >
+                    Suivant
+                  </button>
+
+                  <button
+                    id="pre4"
+                    name="pre4"
+                    class="text-center w-full md:w-fit mt-2 md:mt-0 rounded-lg bg-red-300 px-4 py-2 font-semibold text-white transition-all hover:bg-red-400"
+                  >
+                    Précédent
+                  </button>
+                </div>
+              </div>
+              <!-- step4 end here  -->
+              <!-- step5 start here  -->
+              <div id="step5" class="hidden">
+                <div class="flex w-full -mr-4">
+                  <div class="w-full mx-4">
+                    <h5
+                      class="text-center text-2xl md:text-4xl font-semibold leading-none tracking-tight text-bgray-900"
+                    >
+                      Signature(s) & Paiement
+                    </h5>
+                    <div class="w-full bg-gray-200 rounded-full mt-6">
+                      <div
+                        class="bg-[#16a34a] text-xs font-medium text-green-100 text-center p-2 leading-none rounded-full"
+                        style="width: 100%"
+                      >
+                        100%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full md:w-1/2 pr-8 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="name"
+                        class="text-basse mb-2 block font-medium text-bgray-600"
+                        >Nom de l'entreprise</label
+                      >
+                      <input
+                        id="name"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="STYLO"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 pr-8 mt-6 md:mt-0 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="capital"
+                        class="text-basse mb-2 block font-medium text-bgray-600"
+                        >Capital</label
+                      >
+                      <input
+                        id="capital"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="1000€"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full md:w-1/2 pr-8 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="adresse"
+                        class="text-basse mb-2 block font-medium text-bgray-600"
+                        >Adresse de l'entreprise</label
+                      >
+                      <input
+                        id="adresse"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="276 Rue du Faubourg Saint-Antoine 75012 Paris"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 pr-8 mt-6 md:mt-0 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="activite"
+                        class="text-basse mb-2 block font-medium text-bgray-600"
+                        >Activité</label
+                      >
+                      <input
+                        id="activite"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="Studio musical"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full md:w-1/2 pr-8 mt-6 md:mt-0 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="shareholder"
+                        class="text-basse mb-2 block font-medium text-bgray-600"
+                        >Nombre(s) d’associé(s)</label
+                      >
+                      <input
+                        id="shareholder"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="1"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/2 pr-8 mt-6 md:mt-0 md:pr-0 mx-4">
+                    <div>
+                      <label
+                        for="parts"
+                        class="text-basse mb-2 block font-medium text-bgray-600"
+                        >Valeur de la part sociale</label
+                      >
+                      <input
+                        id="parts"
+                        class="w-full rounded-lg border-0 bg-bgray-50 p-4 focus:border focus:border-green focus:ring-0"
+                        value="5"
+                        disabled=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-8 mx-4" />
+
+                <div class="block md:flex w-full -mr-4 mt-6">
+                  <div class="w-full pr-8 md:pr-0 mx-4">
+                    <span class="text-basse block font-medium text-bgray-600"
+                      >Signature</span
+                    >
+                  </div>
+                </div>
+                <div id="signedContainer">
+                  <div
+                    class="bg-gray-100 pb-8 md:pb-4 p-4 mx-4 my-2 rounded-lg block md:flex justify-between"
+                  >
+                    <div class="w-full">
+                      <h5
+                        class="self-center text-center md:text-start text-xl font-semibold leading-none tracking-tight text-bgray-900"
+                      >
+                        SAS BMF HOLDING
+                      </h5>
+                      <div class="mt-2">
+                        <span
+                          class="self-center bg-red-300 text-red-800 text-base font-medium px-2.5 py-0.5 rounded"
+                          >Non signé</span
+                        >
+                      </div>
+                    </div>
+                    <div class="w-full mb-0">
+                      <input
+                        type="hidden"
+                        name="token"
+                        value="6d8fc1cf1b9e7145812c92576b44e6e1962b07790d185899b0dc61f3f6d1a41c"
+                      />
+                      <input type="hidden" name="id" value="348" />
+                      <div class="flex items-center mt-2">
+                        <span
+                          class="flex-shrink-0 z-10 inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100"
+                          type="button"
+                        >
+                          <svg
+                            class="w-4 h-4 me-2"
+                            fill="none"
+                            viewBox="0 0 20 15"
+                          >
+                            <rect
+                              width="19.1"
+                              height="13.5"
+                              x=".25"
+                              y=".75"
+                              fill="#fff"
+                              stroke="#F5F5F5"
+                              stroke-width=".5"
+                              rx="1.75"
+                            ></rect>
+                            <mask
+                              id="a"
+                              style="mask-type: luminance"
+                              width="20"
+                              height="15"
+                              x="0"
+                              y="0"
+                              maskUnits="userSpaceOnUse"
+                            >
+                              <rect
+                                width="19.1"
+                                height="13.5"
+                                x=".25"
+                                y=".75"
+                                fill="#fff"
+                                stroke="#fff"
+                                stroke-width=".5"
+                                rx="1.75"
+                              ></rect>
+                            </mask>
+                            <g mask="url(#a)">
+                              <path
+                                fill="#F44653"
+                                d="M13.067.5H19.6v14h-6.533z"
+                              ></path>
+                              <path
+                                fill="#1035BB"
+                                fill-rule="evenodd"
+                                d="M0 14.5h6.533V.5H0v14z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </g>
+                          </svg>
+                          +33
+                        </span>
+                        <div class="relative w-full">
+                          <input
+                            name="phone"
+                            type="number"
+                            class="block w-full z-20 text-sm text-gray-900 bg-gray-50 border-e-0 border-s-0 border border-gray-300 focus:ring-green-500 focus:border-green-500"
+                            pattern="[0-9]{10}"
+                            placeholder="0645124565"
+                            required=""
+                          />
+                        </div>
+                        <button
+                          type="submit"
+                          name="btn_send"
+                          class="flex-shrink-0 z-10 inline-flex items-center py-2 px-4 text-sm text-white font-medium text-center bg-green border border-gray-300 rounded-e-lg focus:ring-4 focus:outline-none focus:ring-gray-100 bg-[#26874e] hover:bg-[#16a34a]"
+                        >
+                          Envoyer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="block md:flex md:flex-row-reverse md:justify-between mx-4 mt-6"
+                >
+                  <button
+                    id="procéder"
+                    name="btn_step"
+                    class="w-full md:w-fit rounded-lg bg-[#26874e] px-4 py-2 font-semibold text-white transition-all hover:bg-[#16a34a]"
+                  >
+                    Procéder au paiement
+                  </button>
+
+                  <button
+                    id="pre5"
+                    name="pre5"
+                    class="text-center w-full md:w-fit mt-2 md:mt-0 rounded-lg bg-red-300 px-4 py-2 font-semibold text-white transition-all hover:bg-red-400"
+                  >
+                    Précédent
+                  </button>
+                </div>
+              </div>
+              <!-- step5 end here  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dropdown menu -->
+    <div
+      id="dropdown"
+      class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow !left-3 w-64"
+    >
+      <ul class="text-sm text-[#212121] p-2 space-y-1">
+        <li>
+          <button
+            class="flex items-center w-full hover:bg-[#f2f0ed] rounded p-1 justify-between"
+          >
+            <span class="flex items-center gap-3">
+              <span><img src="img/inbox.png" class="w-4" alt="" /></span>
+              <span class="flex flex-col items-start">
+                <span class="font-semibold">John</span>
+                <span class="text-xs text-[#666]">0/5 tasks</span></span
+              >
+            </span>
+            <span class="font-normal text-xs text-[#666]">O then P</span>
+          </button>
+        </li>
+      </ul>
+      <hr class="bg-[#eee] h-[1px] w-full" />
+      <ul class="text-[13px] text-[#212121] p-2 space-y-1">
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3 justify-between"
+          >
+            <span class="flex items-center"
+              ><span><img src="img/settings.png" class="w-4" alt="" /></span>
+              <span class="ms-3">Settings</span></span
+            >
+            <span class="font-normal text-xs text-[#666]">O then S</span>
+          </button>
+        </li>
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+          >
+            <span><img src="img/plus.png" class="w-3" alt="" /></span>
+            <span class="ms-3">Add a team</span>
+          </button>
+        </li>
+      </ul>
+      <hr class="bg-[#eee] h-[1px] w-full" />
+      <ul class="text-[13px] text-[#212121] p-2 space-y-1">
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3 justify-between"
+          >
+            <span class="flex items-center"
+              ><span><img src="img/settings.png" class="w-4" alt="" /></span>
+              <span class="ms-3">Activity log</span></span
+            >
+            <span class="font-normal text-xs text-[#666]">G then A</span>
+          </button>
+        </li>
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3 justify-between"
+          >
+            <span class="flex items-center"
+              ><span><img src="img/settings.png" class="w-4" alt="" /></span>
+              <span class="ms-3">Print</span></span
+            >
+            <span class="font-normal text-xs text-[#666]">Ctrl P</span>
+          </button>
+        </li>
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+          >
+            <span><img src="img/plus.png" class="w-3" alt="" /></span>
+            <span class="ms-3">Resources</span>
+          </button>
+        </li>
+      </ul>
+      <hr class="bg-[#eee] h-[1px] w-full" />
+      <ul class="text-[13px] text-[#212121] p-2 space-y-1">
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+          >
+            <span><img src="img/star.png" class="w-4" alt="" /></span>
+            <span class="ms-3">What's new</span>
+          </button>
+        </li>
+      </ul>
+      <hr class="bg-[#eee] h-[1px] w-full" />
+      <ul class="text-[13px] text-[#212121] p-2 space-y-1">
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+          >
+            <span><img src="img/star.png" class="w-4" alt="" /></span>
+            <span class="ms-3">Upgrade to Pro</span>
+          </button>
+        </li>
+      </ul>
+      <hr class="bg-[#eee] h-[1px] w-full" />
+      <ul class="text-[13px] text-[#212121] p-2 space-y-1">
+        <li>
+          <button
+            class="flex items-center w-full text-[#212121] hover:bg-[#f2f0ed] rounded p-3"
+          >
+            <span><img src="img/arrow.png" class="w-4" alt="" /></span>
+            <span class="ms-3">Log out</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown menu 2-->
+    <div
+      id="dropdown2"
+      class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64"
+    >
+      <ul class="text-sm text-[#212121] p-2 space-y-1">
+        <li>
+          <button class="flex w-full hover:bg-[#f2f0ed] rounded p-1 gap-3">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                class=""
+                style="color: var(--named-color-charcoal)"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M15.994 6.082a.5.5 0 1 0-.987-.164L14.493 9h-3.986l.486-2.918a.5.5 0 1 0-.986-.164L9.493 9H7a.5.5 0 1 0 0 1h2.326l-.666 4H6a.5.5 0 0 0 0 1h2.493l-.486 2.918a.5.5 0 1 0 .986.164L9.507 15h3.986l-.486 2.918a.5.5 0 1 0 .987.164L14.507 15H17a.5.5 0 1 0 0-1h-2.326l.667-4H18a.5.5 0 1 0 0-1h-2.493l.487-2.918ZM14.327 10H10.34l-.667 4h3.987l.667-4Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <span class="block text-start">
+              <span class="font-medium block">Add project</span>
+              <span class="text-xs text-[#666] block"
+                >Plan and assign tasks</span
+              ></span
+            >
+          </button>
+        </li>
+        <li>
+          <button class="flex w-full hover:bg-[#f2f0ed] rounded p-1 gap-3">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M10.241 4.004h3.513c.554 0 1.004.448 1.004 1v9.638l-5.52-7.855V5.004c0-.552.449-1 1.003-1Zm4.844 15.4.048-.074a3.772 3.772 0 0 1-6.218.074L1.863 9.37a1.995 1.995 0 0 1 .493-2.786l2.878-2.007a2.012 2.012 0 0 1 2.795.49l.205.292v-.355c0-1.105.899-2 2.007-2h3.513c1.109 0 2.007.895 2.007 2v.361l.21-.298a2.012 2.012 0 0 1 2.796-.492l2.877 2.008a1.995 1.995 0 0 1 .493 2.785l-7.052 10.035Zm.676-12.295v9.589l5.554-7.903a.998.998 0 0 0-.247-1.393l-2.877-2.007a1.006 1.006 0 0 0-1.398.245L15.761 7.11ZM5.81 5.396 2.932 7.403a.998.998 0 0 0-.247 1.393L9.737 18.83a2.766 2.766 0 0 0 3.844.675 2.744 2.744 0 0 0 .678-3.83L7.207 5.64a1.006 1.006 0 0 0-1.398-.245Zm6.189 12.983a1.002 1.002 0 0 1-1.004-1c0-.552.45-1 1.004-1s1.003.448 1.003 1-.45 1-1.003 1Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+            <span class="block text-start">
+              <span class="font-medium block">Browse templates</span>
+              <span class="text-xs text-[#666] block"
+                >Get started with a project template</span
+              ></span
+            >
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const mainContent = document.getElementById("mainContent");
+      const toggleButton = document.getElementById("toggleButton");
+      const toggleButton2 = document.getElementById("toggleButton2");
+      const toggleButton3 = document.getElementById("toggleButton3");
+      const sidebarMenu = document.getElementById("sidebarMenu");
+      const mobileSidebarMenu = document.getElementById("mobileSidebar");
+
+      const toggleFuc = () => {
+        if (sidebar.classList.contains("sidebar-expanded")) {
+          sidebar.classList.remove("sidebar-expanded");
+          sidebar.classList.add("sidebar-collapsed");
+          mainContent.classList.remove("content-expanded");
+          mainContent.classList.add("content-collapsed");
+          sidebarMenu.classList.add("hidden");
+          mobileSidebarMenu.classList.remove("hidden");
+          if (window.innerWidth <= 1024) {
+            sidebar.classList.add("sidebar-mobile");
+          }
+        } else {
+          sidebar.classList.remove("sidebar-collapsed");
+          sidebar.classList.add("sidebar-expanded");
+          mainContent.classList.remove("content-collapsed");
+          mainContent.classList.add("content-expanded");
+          sidebarMenu.classList.remove("hidden");
+          mobileSidebarMenu.classList.add("hidden");
+          if (window.innerWidth <= 1024) {
+            sidebar.classList.remove("sidebar-mobile");
+          }
+        }
+      };
+
+      toggleButton.addEventListener("click", toggleFuc);
+      toggleButton2.addEventListener("click", toggleFuc);
+      toggleButton3.addEventListener("click", toggleFuc);
+
+      // Initial state based on screen width
+      const setInitialState = () => {
+        if (window.innerWidth <= 1024) {
+          sidebar.classList.remove("sidebar-expanded");
+          sidebar.classList.add("sidebar-collapsed");
+          mainContent.classList.remove("content-expanded");
+          mainContent.classList.add("content-collapsed");
+          sidebarMenu.classList.add("hidden");
+          mobileSidebarMenu.classList.remove("hidden");
+          sidebar.classList.add("sidebar-mobile");
+        } else {
+          sidebar.classList.add("sidebar-expanded");
+          sidebar.classList.remove("sidebar-collapsed");
+          mainContent.classList.add("content-expanded");
+          mainContent.classList.remove("content-collapsed");
+          sidebarMenu.classList.remove("hidden");
+          mobileSidebarMenu.classList.add("hidden");
+        }
+      };
+
+      window.addEventListener("resize", setInitialState);
+      window.addEventListener("load", setInitialState);
+    </script>
+    <script>
+      const step1 = document.getElementById("step1");
+      const step2 = document.getElementById("step2");
+      const step3 = document.getElementById("step3");
+      const step4 = document.getElementById("step4");
+      const step5 = document.getElementById("step5");
+      const suivant = document.getElementById("suivant");
+      const pre2 = document.getElementById("pre2");
+      const suivant2 = document.getElementById("suivant2");
+      const pre3 = document.getElementById("pre3");
+      const suivant3 = document.getElementById("suivant3");
+      const pre4 = document.getElementById("pre4");
+      const suivant4 = document.getElementById("suivant4");
+      const pre5 = document.getElementById("pre5");
+
+      suivant.addEventListener("click", function () {
+        step1.classList.add("hidden");
+        step1.classList.remove("block");
+        step2.classList.remove("hidden");
+        step2.classList.add("block");
+      });
+      pre2.addEventListener("click", function () {
+        step2.classList.add("hidden");
+        step2.classList.remove("block");
+        step1.classList.remove("hidden");
+        step1.classList.add("block");
+      });
+      suivant2.addEventListener("click", function () {
+        step2.classList.add("hidden");
+        step2.classList.remove("block");
+        step3.classList.remove("hidden");
+        step3.classList.add("block");
+      });
+      pre3.addEventListener("click", function () {
+        step3.classList.add("hidden");
+        step3.classList.remove("block");
+        step2.classList.remove("hidden");
+        step2.classList.add("block");
+      });
+      suivant3.addEventListener("click", function () {
+        step3.classList.add("hidden");
+        step3.classList.remove("block");
+        step4.classList.remove("hidden");
+        step4.classList.add("block");
+      });
+      pre4.addEventListener("click", function () {
+        step4.classList.add("hidden");
+        step4.classList.remove("block");
+        step3.classList.remove("hidden");
+        step3.classList.add("block");
+      });
+      suivant4.addEventListener("click", function () {
+        step4.classList.add("hidden");
+        step4.classList.remove("block");
+        step5.classList.remove("hidden");
+        step5.classList.add("block");
+      });
+      pre5.addEventListener("click", function () {
+        step5.classList.add("hidden");
+        step5.classList.remove("block");
+        step4.classList.remove("hidden");
+        step4.classList.add("block");
+      });
+    </script>
+  </body>
+</html>
